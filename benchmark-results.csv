@@ -1,0 +1,137 @@
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=64265:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 1000 iterations, 10 s each, 10000 calls per op
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelMST
+# Parameters: (numVertices = 1000)
+
+# Run progress: 0.00% complete, ETA 05:35:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.001 ms/op
+# Warmup Iteration   2: 0.001 ms/op
+# Warmup Iteration   3: 0.001 ms/op
+# Warmup Iteration   4: 0.001 ms/op
+# Warmup Iteration   5: 0.001 ms/op
+Iteration   1: 6.683 ms/op
+Iteration   2: 6.676 ms/op
+Iteration   3: 6.713 ms/op
+Iteration   4: 6.700 ms/op
+Iteration   5: 6.717 ms/op
+Iteration   6: 6.743 ms/op
+Iteration   7: 6.772 ms/op
+Iteration   8: 6.762 ms/op
+Iteration   9: 6.814 ms/op
+Iteration  10: 6.814 ms/op
+Iteration  11: 6.835 ms/op
+Iteration  12: 6.833 ms/op
+Iteration  13: 6.831 ms/op
+Iteration  14: 6.837 ms/op
+Iteration  15: 6.843 ms/op
+Iteration  16: 6.846 ms/op
+Iteration  17: 6.848 ms/op
+Iteration  18: 6.846 ms/op
+Iteration  19: 6.847 ms/op
+Iteration  20: 6.846 ms/op
+Iteration  21: 6.857 ms/op
+Iteration  22: 6.860 ms/op
+Iteration  23: 6.863 ms/op
+Iteration  24: 6.863 ms/op
+Iteration  25: 6.857 ms/op
+Iteration  26: 6.859 ms/op
+Iteration  27: 6.859 ms/op
+Iteration  28: 6.857 ms/op
+Iteration  29: 6.863 ms/op
+Iteration  30: 6.858 ms/op
+Iteration  31: 6.859 ms/op
+Iteration  32: 6.854 ms/op
+Iteration  33: 6.859 ms/op
+Iteration  34: 6.859 ms/op
+Iteration  35: 6.860 ms/op
+Iteration  36: 6.859 ms/op
+Iteration  37: 6.862 ms/op
+Iteration  38: 6.858 ms/op
+Iteration  39: 6.858 ms/op
+Iteration  40: 6.861 ms/op
+Iteration  41: 6.863 ms/op
+Iteration  42: 6.858 ms/op
+Iteration  43: 6.856 ms/op
+Iteration  44: 6.858 ms/op
+Iteration  45: 6.864 ms/op
+Iteration  46: 6.861 ms/op
+Iteration  47: 6.865 ms/op
+Iteration  48: 6.919 ms/op
+Iteration  49: 6.869 ms/op
+Iteration  50: 6.859 ms/op
+Iteration  51: 6.865 ms/op
+Iteration  52: 6.870 ms/op
+Iteration  53: 6.866 ms/op
+Iteration  54: 6.868 ms/op
+Iteration  55: 6.874 ms/op
+Iteration  56: 6.861 ms/op
+Iteration  57: 6.860 ms/op
+Iteration  58: 6.859 ms/op
+Iteration  59: 6.858 ms/op
+Iteration  60: 6.860 ms/op
+Iteration  61: 6.859 ms/op
+Iteration  62: 7.361 ms/op
+Iteration  63: 6.868 ms/op
+Iteration  64: 6.870 ms/op
+Iteration  65: 6.869 ms/op
+Iteration  66: 6.895 ms/op
+Iteration  67: 6.866 ms/op
+Iteration  68: 6.866 ms/op
+Iteration  69: 6.870 ms/op
+Iteration  70: 6.856 ms/op
+Iteration  71: 6.867 ms/op
+Iteration  72: 6.859 ms/op
+Iteration  73: 6.861 ms/op
+Iteration  74: 6.860 ms/op
+Iteration  75: 6.867 ms/op
+Iteration  76: 6.879 ms/op
+Iteration  77: 6.869 ms/op
+Iteration  78: 6.876 ms/op
+Iteration  79: 6.867 ms/op
+Iteration  80: 6.859 ms/op
+Iteration  81: 6.914 ms/op
+Iteration  82: 6.869 ms/op
+Iteration  83: 6.861 ms/op
+Iteration  84: 6.870 ms/op
+Iteration  85: 6.864 ms/op
+Iteration  86: 6.863 ms/op
+Iteration  87: 6.864 ms/op
+Iteration  88: 6.864 ms/op
+Iteration  89: 6.868 ms/op
+Iteration  90: 6.860 ms/op
+Iteration  91: 6.867 ms/op
+Iteration  92: 6.858 ms/op
+Iteration  93: 6.862 ms/op
+Iteration  94: 6.904 ms/op
+Iteration  95: 6.859 ms/op
+Iteration  96: 6.867 ms/op
+Iteration  97: 6.863 ms/op
+Iteration  98: 6.861 ms/op
+Iteration  99: 6.867 ms/op
+Iteration 100: 6.864 ms/op
+Iteration 101: 6.883 ms/op
+Iteration 102: 6.864 ms/op
+Iteration 103: 6.862 ms/op
+Iteration 104: 6.933 ms/op
+Iteration 105: 6.860 ms/op
+Iteration 106: 6.851 ms/op
+Iteration 107: 6.859 ms/op
+Iteration 108: 6.845 ms/op
+Iteration 109: 6.852 ms/op
+Iteration 110: 6.859 ms/op
+Iteration 111: 6.854 ms/op
+Iteration 112: 6.857 ms/op
+Iteration 113: 6.859 ms/op
+Iteration 114: 6.852 ms/op
+Iteration 115: 6.846 ms/op
+Iteration 116: 6.881 ms/op
+Iteration 117: 

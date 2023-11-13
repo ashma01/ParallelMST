@@ -1,0 +1,752 @@
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal
+# Parameters: (numVertices = 100)
+
+# Run progress: 0.00% complete, ETA 00:50:00
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52365]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 21076.681 ops/s
+# Warmup Iteration   2: 23348.573 ops/s
+# Warmup Iteration   3: 25442.137 ops/s
+# Warmup Iteration   4: 22441.222 ops/s
+# Warmup Iteration   5: 24020.717 ops/s
+Iteration   1: 21248.187 ops/s
+Iteration   2: 21783.898 ops/s
+Iteration   3: 21232.260 ops/s
+Iteration   4: 23669.123 ops/s
+Iteration   5: 22245.356 ops/s
+
+# Run progress: 3.33% complete, ETA 00:48:37
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52365]
+# Fork: 1 of 1
+# Warmup Iteration   1: 20103.744 ops/s
+# Warmup Iteration   2: 22259.763 ops/s
+# Warmup Iteration   3: 21846.269 ops/s
+# Warmup Iteration   4: 20652.167 ops/s
+# Warmup Iteration   5: 22664.681 ops/s
+Iteration   1: 21960.692 ops/s
+Iteration   2: 20287.715 ops/s
+Iteration   3: 22515.107 ops/s
+Iteration   4: 22342.841 ops/s
+Iteration   5: 26369.946 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal":
+  22695.260 ±(99.9%) 8609.405 ops/s [Average]
+  (min, avg, max) = (20287.715, 22695.260, 26369.946), stdev = 2235.835
+  CI (99.9%): [14085.855, 31304.665] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal
+# Parameters: (numVertices = 500)
+
+# Run progress: 6.67% complete, ETA 00:46:56
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52390]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 15599.563 ops/s
+# Warmup Iteration   2: 15547.244 ops/s
+# Warmup Iteration   3: 16833.048 ops/s
+# Warmup Iteration   4: 15762.728 ops/s
+# Warmup Iteration   5: 15939.121 ops/s
+Iteration   1: 15499.782 ops/s
+Iteration   2: 15892.521 ops/s
+Iteration   3: 16367.478 ops/s
+Iteration   4: 15659.877 ops/s
+Iteration   5: 15277.321 ops/s
+
+# Run progress: 10.00% complete, ETA 00:45:16
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52390]
+# Fork: 1 of 1
+# Warmup Iteration   1: 15283.513 ops/s
+# Warmup Iteration   2: 15975.559 ops/s
+# Warmup Iteration   3: 15943.506 ops/s
+# Warmup Iteration   4: 15656.482 ops/s
+# Warmup Iteration   5: 16741.831 ops/s
+Iteration   1: 16100.643 ops/s
+Iteration   2: 16199.480 ops/s
+Iteration   3: 17202.506 ops/s
+Iteration   4: 16125.654 ops/s
+Iteration   5: 15690.639 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal":
+  16263.784 ±(99.9%) 2160.760 ops/s [Average]
+  (min, avg, max) = (15690.639, 16263.784, 17202.506), stdev = 561.143
+  CI (99.9%): [14103.024, 18424.545] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal
+# Parameters: (numVertices = 5000)
+
+# Run progress: 13.33% complete, ETA 00:43:36
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52414]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 4105.286 ops/s
+# Warmup Iteration   2: 4163.343 ops/s
+# Warmup Iteration   3: 4158.364 ops/s
+# Warmup Iteration   4: 4105.556 ops/s
+# Warmup Iteration   5: 3930.854 ops/s
+Iteration   1: 3916.925 ops/s
+Iteration   2: 3918.245 ops/s
+Iteration   3: 3929.531 ops/s
+Iteration   4: 3919.920 ops/s
+Iteration   5: 3945.137 ops/s
+
+# Run progress: 16.67% complete, ETA 00:41:55
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52414]
+# Fork: 1 of 1
+# Warmup Iteration   1: 3763.151 ops/s
+# Warmup Iteration   2: 3783.657 ops/s
+# Warmup Iteration   3: 3808.396 ops/s
+# Warmup Iteration   4: 3839.930 ops/s
+# Warmup Iteration   5: 3861.453 ops/s
+Iteration   1: 3925.728 ops/s
+Iteration   2: 3928.854 ops/s
+Iteration   3: 3927.088 ops/s
+Iteration   4: 3935.311 ops/s
+Iteration   5: 3934.782 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal":
+  3930.353 ±(99.9%) 17.057 ops/s [Average]
+  (min, avg, max) = (3925.728, 3930.353, 3935.311), stdev = 4.430
+  CI (99.9%): [3913.296, 3947.410] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal
+# Parameters: (numVertices = 10000)
+
+# Run progress: 20.00% complete, ETA 00:40:15
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52436]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 2092.618 ops/s
+# Warmup Iteration   2: 2116.293 ops/s
+# Warmup Iteration   3: 2120.520 ops/s
+# Warmup Iteration   4: 2117.944 ops/s
+# Warmup Iteration   5: 2120.134 ops/s
+Iteration   1: 2123.395 ops/s
+Iteration   2: 2086.995 ops/s
+Iteration   3: 2128.191 ops/s
+Iteration   4: 2129.398 ops/s
+Iteration   5: 2127.383 ops/s
+
+# Run progress: 23.33% complete, ETA 00:38:34
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52436]
+# Fork: 1 of 1
+# Warmup Iteration   1: 2148.031 ops/s
+# Warmup Iteration   2: 2169.351 ops/s
+# Warmup Iteration   3: 2166.695 ops/s
+# Warmup Iteration   4: 2165.437 ops/s
+# Warmup Iteration   5: 2164.718 ops/s
+Iteration   1: 2170.993 ops/s
+Iteration   2: 2172.190 ops/s
+Iteration   3: 2170.447 ops/s
+Iteration   4: 2170.986 ops/s
+Iteration   5: 2169.726 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal":
+  2170.868 ±(99.9%) 3.475 ops/s [Average]
+  (min, avg, max) = (2169.726, 2170.868, 2172.190), stdev = 0.902
+  CI (99.9%): [2167.394, 2174.343] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal
+# Parameters: (numVertices = 20000)
+
+# Run progress: 26.67% complete, ETA 00:36:54
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52459]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 1120.112 ops/s
+# Warmup Iteration   2: 1142.843 ops/s
+# Warmup Iteration   3: 1145.520 ops/s
+# Warmup Iteration   4: 1145.611 ops/s
+# Warmup Iteration   5: 1145.601 ops/s
+Iteration   1: 1143.201 ops/s
+Iteration   2: 1145.199 ops/s
+Iteration   3: 1145.592 ops/s
+Iteration   4: 1145.687 ops/s
+Iteration   5: 1145.839 ops/s
+
+# Run progress: 30.00% complete, ETA 00:35:13
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52459]
+# Fork: 1 of 1
+# Warmup Iteration   1: 1167.487 ops/s
+# Warmup Iteration   2: 1179.822 ops/s
+# Warmup Iteration   3: 1180.009 ops/s
+# Warmup Iteration   4: 1180.268 ops/s
+# Warmup Iteration   5: 1180.705 ops/s
+Iteration   1: 1179.557 ops/s
+Iteration   2: 1180.073 ops/s
+Iteration   3: 1179.763 ops/s
+Iteration   4: 1181.106 ops/s
+Iteration   5: 1181.085 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal":
+  1180.317 ±(99.9%) 2.827 ops/s [Average]
+  (min, avg, max) = (1179.557, 1180.317, 1181.106), stdev = 0.734
+  CI (99.9%): [1177.490, 1183.144] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims
+# Parameters: (numVertices = 100)
+
+# Run progress: 33.33% complete, ETA 00:33:33
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52484]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 6028665.026 ops/s
+# Warmup Iteration   2: 5571588.851 ops/s
+# Warmup Iteration   3: 5503354.319 ops/s
+# Warmup Iteration   4: 5525131.790 ops/s
+# Warmup Iteration   5: 5534782.530 ops/s
+Iteration   1: 5448334.854 ops/s
+Iteration   2: 5564876.932 ops/s
+Iteration   3: 5514578.477 ops/s
+Iteration   4: 5597909.660 ops/s
+Iteration   5: 5487409.688 ops/s
+
+# Run progress: 36.67% complete, ETA 00:31:52
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52484]
+# Fork: 1 of 1
+# Warmup Iteration   1: 5957396.229 ops/s
+# Warmup Iteration   2: 5526601.757 ops/s
+# Warmup Iteration   3: 5457652.316 ops/s
+# Warmup Iteration   4: 5514116.678 ops/s
+# Warmup Iteration   5: 5460166.853 ops/s
+Iteration   1: 5496057.984 ops/s
+Iteration   2: 5511570.849 ops/s
+Iteration   3: 5516110.457 ops/s
+Iteration   4: 5559798.535 ops/s
+Iteration   5: 5575794.240 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims":
+  5531866.413 ±(99.9%) 131321.370 ops/s [Average]
+  (min, avg, max) = (5496057.984, 5531866.413, 5575794.240), stdev = 34103.743
+  CI (99.9%): [5400545.043, 5663187.784] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims
+# Parameters: (numVertices = 500)
+
+# Run progress: 40.00% complete, ETA 00:30:12
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52510]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 2653938.289 ops/s
+# Warmup Iteration   2: 2647218.918 ops/s
+# Warmup Iteration   3: 2640609.180 ops/s
+# Warmup Iteration   4: 2699319.628 ops/s
+# Warmup Iteration   5: 2697301.052 ops/s
+Iteration   1: 2734476.963 ops/s
+Iteration   2: 2691675.198 ops/s
+Iteration   3: 2587998.082 ops/s
+Iteration   4: 2646968.705 ops/s
+Iteration   5: 2654233.274 ops/s
+
+# Run progress: 43.33% complete, ETA 00:28:31
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52510]
+# Fork: 1 of 1
+# Warmup Iteration   1: 2639393.001 ops/s
+# Warmup Iteration   2: 2613750.083 ops/s
+# Warmup Iteration   3: 2518243.238 ops/s
+# Warmup Iteration   4: 2582175.470 ops/s
+# Warmup Iteration   5: 2576136.685 ops/s
+Iteration   1: 2575432.513 ops/s
+Iteration   2: 2498220.855 ops/s
+Iteration   3: 2576506.160 ops/s
+Iteration   4: 2573759.550 ops/s
+Iteration   5: 2575817.352 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims":
+  2559947.286 ±(99.9%) 132927.811 ops/s [Average]
+  (min, avg, max) = (2498220.855, 2559947.286, 2576506.160), stdev = 34520.930
+  CI (99.9%): [2427019.475, 2692875.097] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims
+# Parameters: (numVertices = 5000)
+
+# Run progress: 46.67% complete, ETA 00:26:50
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52545]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 319855.898 ops/s
+# Warmup Iteration   2: 311704.563 ops/s
+# Warmup Iteration   3: 287433.880 ops/s
+# Warmup Iteration   4: 322908.402 ops/s
+# Warmup Iteration   5: 312178.268 ops/s
+Iteration   1: 309816.412 ops/s
+Iteration   2: 324630.951 ops/s
+Iteration   3: 302263.230 ops/s
+Iteration   4: 316857.193 ops/s
+Iteration   5: 321972.286 ops/s
+
+# Run progress: 50.00% complete, ETA 00:25:10
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52545]
+# Fork: 1 of 1
+# Warmup Iteration   1: 318688.319 ops/s
+# Warmup Iteration   2: 311632.452 ops/s
+# Warmup Iteration   3: 302299.399 ops/s
+# Warmup Iteration   4: 313538.338 ops/s
+# Warmup Iteration   5: 321600.086 ops/s
+Iteration   1: 312731.169 ops/s
+Iteration   2: 286300.577 ops/s
+Iteration   3: 316151.045 ops/s
+Iteration   4: 324022.041 ops/s
+Iteration   5: 323919.410 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims":
+  312624.848 ±(99.9%) 59743.202 ops/s [Average]
+  (min, avg, max) = (286300.577, 312624.848, 324022.041), stdev = 15515.120
+  CI (99.9%): [252881.647, 372368.050] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims
+# Parameters: (numVertices = 10000)
+
+# Run progress: 53.33% complete, ETA 00:23:29
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52593]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 148969.874 ops/s
+# Warmup Iteration   2: 144326.377 ops/s
+# Warmup Iteration   3: 149603.150 ops/s
+# Warmup Iteration   4: 149468.692 ops/s
+# Warmup Iteration   5: 149860.095 ops/s
+Iteration   1: 133025.159 ops/s
+Iteration   2: 138214.177 ops/s
+Iteration   3: 141483.223 ops/s
+Iteration   4: 150009.407 ops/s
+Iteration   5: 149984.717 ops/s
+
+# Run progress: 56.67% complete, ETA 00:21:49
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52593]
+# Fork: 1 of 1
+# Warmup Iteration   1: 160856.893 ops/s
+# Warmup Iteration   2: 163162.939 ops/s
+# Warmup Iteration   3: 162828.275 ops/s
+# Warmup Iteration   4: 162821.272 ops/s
+# Warmup Iteration   5: 163387.899 ops/s
+Iteration   1: 163039.785 ops/s
+Iteration   2: 163373.430 ops/s
+Iteration   3: 163388.397 ops/s
+Iteration   4: 163419.076 ops/s
+Iteration   5: 163326.917 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims":
+  163309.521 ±(99.9%) 594.574 ops/s [Average]
+  (min, avg, max) = (163039.785, 163309.521, 163419.076), stdev = 154.409
+  CI (99.9%): [162714.947, 163904.095] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims
+# Parameters: (numVertices = 20000)
+
+# Run progress: 60.00% complete, ETA 00:20:08
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52672]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 74321.489 ops/s
+# Warmup Iteration   2: 81841.856 ops/s
+# Warmup Iteration   3: 81993.597 ops/s
+# Warmup Iteration   4: 81914.283 ops/s
+# Warmup Iteration   5: 81816.749 ops/s
+Iteration   1: 81824.573 ops/s
+Iteration   2: 81767.997 ops/s
+Iteration   3: 81938.104 ops/s
+Iteration   4: 81965.901 ops/s
+Iteration   5: 81965.630 ops/s
+
+# Run progress: 63.33% complete, ETA 00:18:27
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52672]
+# Fork: 1 of 1
+# Warmup Iteration   1: 79795.148 ops/s
+# Warmup Iteration   2: 81793.895 ops/s
+# Warmup Iteration   3: 81968.064 ops/s
+# Warmup Iteration   4: 81932.860 ops/s
+# Warmup Iteration   5: 79051.280 ops/s
+Iteration   1: 81927.189 ops/s
+Iteration   2: 81870.870 ops/s
+Iteration   3: 81943.207 ops/s
+Iteration   4: 81987.737 ops/s
+Iteration   5: 82018.247 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims":
+  81949.450 ±(99.9%) 218.744 ops/s [Average]
+  (min, avg, max) = (81870.870, 81949.450, 82018.247), stdev = 56.807
+  CI (99.9%): [81730.706, 82168.194] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkSequential
+# Parameters: (numVertices = 100)
+
+# Run progress: 66.67% complete, ETA 00:16:46
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52746]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 422079.364 ops/s
+# Warmup Iteration   2: 427039.958 ops/s
+# Warmup Iteration   3: 428114.469 ops/s
+# Warmup Iteration   4: 428234.991 ops/s
+# Warmup Iteration   5: 428169.360 ops/s
+Iteration   1: 428224.851 ops/s
+Iteration   2: 427802.442 ops/s
+Iteration   3: 428031.738 ops/s
+Iteration   4: 412648.145 ops/s
+Iteration   5: 428414.837 ops/s
+
+# Run progress: 70.00% complete, ETA 00:15:06
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52746]
+# Fork: 1 of 1
+# Warmup Iteration   1: 413045.016 ops/s
+# Warmup Iteration   2: 417889.005 ops/s
+# Warmup Iteration   3: 418084.131 ops/s
+# Warmup Iteration   4: 418084.274 ops/s
+# Warmup Iteration   5: 417916.259 ops/s
+Iteration   1: 418049.856 ops/s
+Iteration   2: 418033.812 ops/s
+Iteration   3: 418155.631 ops/s
+Iteration   4: 418059.556 ops/s
+Iteration   5: 418020.112 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkSequential":
+  418063.793 ±(99.9%) 206.049 ops/s [Average]
+  (min, avg, max) = (418020.112, 418063.793, 418155.631), stdev = 53.510
+  CI (99.9%): [417857.745, 418269.842] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkSequential
+# Parameters: (numVertices = 500)
+
+# Run progress: 73.33% complete, ETA 00:13:25
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52779]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 59784.514 ops/s
+# Warmup Iteration   2: 60960.929 ops/s
+# Warmup Iteration   3: 60822.970 ops/s
+# Warmup Iteration   4: 61122.899 ops/s
+# Warmup Iteration   5: 61260.883 ops/s
+Iteration   1: 61291.319 ops/s
+Iteration   2: 61320.421 ops/s
+Iteration   3: 61103.056 ops/s
+Iteration   4: 61120.573 ops/s
+Iteration   5: 61299.364 ops/s
+
+# Run progress: 76.67% complete, ETA 00:11:44
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52779]
+# Fork: 1 of 1
+# Warmup Iteration   1: 60912.731 ops/s
+# Warmup Iteration   2: 61989.908 ops/s
+# Warmup Iteration   3: 62253.666 ops/s
+# Warmup Iteration   4: 62315.688 ops/s
+# Warmup Iteration   5: 62383.864 ops/s
+Iteration   1: 62353.507 ops/s
+Iteration   2: 62388.006 ops/s
+Iteration   3: 62299.853 ops/s
+Iteration   4: 61922.698 ops/s
+Iteration   5: 62141.355 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkSequential":
+  62221.084 ±(99.9%) 738.166 ops/s [Average]
+  (min, avg, max) = (61922.698, 62221.084, 62388.006), stdev = 191.699
+  CI (99.9%): [61482.918, 62959.249] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkSequential
+# Parameters: (numVertices = 5000)
+
+# Run progress: 80.00% complete, ETA 00:10:04
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52821]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 2511.254 ops/s
+# Warmup Iteration   2: 2550.663 ops/s
+# Warmup Iteration   3: 2572.201 ops/s
+# Warmup Iteration   4: 2589.744 ops/s
+# Warmup Iteration   5: 2594.541 ops/s
+Iteration   1: 2593.017 ops/s
+Iteration   2: 2575.362 ops/s
+Iteration   3: 2458.374 ops/s
+Iteration   4: 2604.522 ops/s
+Iteration   5: 2606.905 ops/s
+
+# Run progress: 83.33% complete, ETA 00:08:23
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52821]
+# Fork: 1 of 1
+# Warmup Iteration   1: 2512.203 ops/s
+# Warmup Iteration   2: 2552.886 ops/s
+# Warmup Iteration   3: 2562.874 ops/s
+# Warmup Iteration   4: 2596.898 ops/s
+# Warmup Iteration   5: 2617.187 ops/s
+Iteration   1: 2597.859 ops/s
+Iteration   2: 2578.269 ops/s
+Iteration   3: 2612.628 ops/s
+Iteration   4: 2617.152 ops/s
+Iteration   5: 2608.449 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkSequential":
+  2602.871 ±(99.9%) 59.674 ops/s [Average]
+  (min, avg, max) = (2578.269, 2602.871, 2617.152), stdev = 15.497
+  CI (99.9%): [2543.198, 2662.545] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkSequential
+# Parameters: (numVertices = 10000)
+
+# Run progress: 86.67% complete, ETA 00:06:42
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52873]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 1083.651 ops/s
+# Warmup Iteration   2: 1148.359 ops/s
+# Warmup Iteration   3: 1151.955 ops/s
+# Warmup Iteration   4: 1152.288 ops/s
+# Warmup Iteration   5: 1148.921 ops/s
+Iteration   1: 1150.882 ops/s
+Iteration   2: 1150.855 ops/s
+Iteration   3: 1151.412 ops/s
+Iteration   4: 1152.096 ops/s
+Iteration   5: 1150.701 ops/s
+
+# Run progress: 90.00% complete, ETA 00:05:02
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52873]
+# Fork: 1 of 1
+# Warmup Iteration   1: 1148.290 ops/s
+# Warmup Iteration   2: 1165.371 ops/s
+# Warmup Iteration   3: 1165.410 ops/s
+# Warmup Iteration   4: 1166.769 ops/s
+# Warmup Iteration   5: 1125.534 ops/s
+Iteration   1: 1166.719 ops/s
+Iteration   2: 1163.456 ops/s
+Iteration   3: 1166.610 ops/s
+Iteration   4: 1165.136 ops/s
+Iteration   5: 1166.677 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkSequential":
+  1165.719 ±(99.9%) 5.504 ops/s [Average]
+  (min, avg, max) = (1163.456, 1165.719, 1166.719), stdev = 1.429
+  CI (99.9%): [1160.216, 1171.223] (assumes normal distribution)
+
+
+# JMH version: 1.36
+# VM version: JDK 20.0.2, OpenJDK 64-Bit Server VM, 20.0.2+9-78
+# VM invoker: /Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java
+# VM options: -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: org.benchmark.parallel.PrimsBenchmark.benchmarkSequential
+# Parameters: (numVertices = 20000)
+
+# Run progress: 93.33% complete, ETA 00:03:21
+Warmup forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52920]
+# Warmup Fork: 1 of 1
+# Warmup Iteration   1: 538.826 ops/s
+# Warmup Iteration   2: 547.042 ops/s
+# Warmup Iteration   3: 547.911 ops/s
+# Warmup Iteration   4: 547.604 ops/s
+# Warmup Iteration   5: 547.963 ops/s
+Iteration   1: 547.737 ops/s
+Iteration   2: 547.405 ops/s
+Iteration   3: 547.925 ops/s
+Iteration   4: 525.917 ops/s
+Iteration   5: 547.236 ops/s
+
+# Run progress: 96.67% complete, ETA 00:01:40
+Forking using command: [/Users/ashmaparveen/Library/Java/JavaVirtualMachines/openjdk-20.0.2/Contents/Home/bin/java, -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52363:/Applications/IntelliJ IDEA.app/Contents/bin, -Dfile.encoding=UTF-8, -Dsun.stdout.encoding=UTF-8, -Dsun.stderr.encoding=UTF-8, -XX:+UnlockDiagnosticVMOptions, -XX:+UnlockExperimentalVMOptions, -DcompilerBlackholesEnabled=true, -XX:CompileCommandFile=/var/folders/s_/bgt74s2j4hlbkj0r3ml8rcf40000gn/T/jmh11530060114354997468compilecommand, -cp, /Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/target/classes:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-core/1.36/jmh-core-1.36.jar:/Users/ashmaparveen/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/ashmaparveen/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/Users/ashmaparveen/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.36/jmh-generator-annprocess-1.36.jar, org.openjdk.jmh.runner.ForkedMain, 127.0.0.1, 52920]
+# Fork: 1 of 1
+# Warmup Iteration   1: 539.968 ops/s
+# Warmup Iteration   2: 548.130 ops/s
+# Warmup Iteration   3: 548.143 ops/s
+# Warmup Iteration   4: 548.436 ops/s
+# Warmup Iteration   5: 548.192 ops/s
+Iteration   1: 548.174 ops/s
+Iteration   2: 548.410 ops/s
+Iteration   3: 548.474 ops/s
+Iteration   4: 548.339 ops/s
+Iteration   5: 547.928 ops/s
+
+
+Result "org.benchmark.parallel.PrimsBenchmark.benchmarkSequential":
+  548.265 ±(99.9%) 0.843 ops/s [Average]
+  (min, avg, max) = (547.928, 548.265, 548.474), stdev = 0.219
+  CI (99.9%): [547.422, 549.108] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:50:21
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                (numVertices)   Mode  Cnt        Score        Error  Units
+PrimsBenchmark.benchmarkParallelKruskal            100  thrpt    5    22695.260 ±   8609.405  ops/s
+PrimsBenchmark.benchmarkParallelKruskal            500  thrpt    5    16263.784 ±   2160.760  ops/s
+PrimsBenchmark.benchmarkParallelKruskal           5000  thrpt    5     3930.353 ±     17.057  ops/s
+PrimsBenchmark.benchmarkParallelKruskal          10000  thrpt    5     2170.868 ±      3.475  ops/s
+PrimsBenchmark.benchmarkParallelKruskal          20000  thrpt    5     1180.317 ±      2.827  ops/s
+PrimsBenchmark.benchmarkParallelPrims              100  thrpt    5  5531866.413 ± 131321.370  ops/s
+PrimsBenchmark.benchmarkParallelPrims              500  thrpt    5  2559947.286 ± 132927.811  ops/s
+PrimsBenchmark.benchmarkParallelPrims             5000  thrpt    5   312624.848 ±  59743.202  ops/s
+PrimsBenchmark.benchmarkParallelPrims            10000  thrpt    5   163309.521 ±    594.574  ops/s
+PrimsBenchmark.benchmarkParallelPrims            20000  thrpt    5    81949.450 ±    218.744  ops/s
+PrimsBenchmark.benchmarkSequential                 100  thrpt    5   418063.793 ±    206.049  ops/s
+PrimsBenchmark.benchmarkSequential                 500  thrpt    5    62221.084 ±    738.166  ops/s
+PrimsBenchmark.benchmarkSequential                5000  thrpt    5     2602.871 ±     59.674  ops/s
+PrimsBenchmark.benchmarkSequential               10000  thrpt    5     1165.719 ±      5.504  ops/s
+PrimsBenchmark.benchmarkSequential               20000  thrpt    5      548.265 ±      0.843  ops/s
+
+Benchmark result is saved to jmh-result.csv

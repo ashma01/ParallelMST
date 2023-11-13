@@ -1,6 +1,8 @@
-/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/mstAlgorithm/src/main/java/com/parallel/algorithm/mst/ParallelPrims.java
-/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/mstAlgorithm/src/main/java/com/parallel/algorithm/mst/MyBenchmark.java
-/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/mstAlgorithm/src/main/java/com/parallel/algorithm/mst/MstApplication.java
-/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/mstAlgorithm/src/main/java/com/parallel/algorithm/mst/SequentialPrimMST.java
-/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/mstAlgorithm/src/main/java/com/parallel/algorithm/mst/GraphFromFile.java
-/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/mstAlgorithm/src/main/java/com/parallel/algorithm/mst/Main.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/Main.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/ParallelKruskal.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/Edge.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/GraphFromFile.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/ParallelPrims.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/PrimsBenchmark.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/DisjointSet.java
+/Users/ashmaparveen/Desktop/DesktopData/StudyMaterial/Fall23/ParallelAlgorithm/MavenProject/BenchMarkMST/src/main/java/org/benchmark/parallel/SequentialMST.java

@@ -3,5 +3,7 @@ dontinline,*.*_avgt_jmhStub
 dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
-inline,com/parallel/algorithm/mst/ParallelPrimsBenchmark.benchmarkGetMST
-inline,com/parallel/algorithm/mst/ParallelPrimsBenchmark.setup
+inline,org/benchmark/parallel/PrimsBenchmark.benchmarkParallelKruskal
+inline,org/benchmark/parallel/PrimsBenchmark.benchmarkParallelPrims
+inline,org/benchmark/parallel/PrimsBenchmark.benchmarkSequential
+inline,org/benchmark/parallel/PrimsBenchmark.setup

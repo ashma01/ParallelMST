@@ -1,0 +1,16 @@
+"Benchmark","Mode","Threads","Samples","Score","Score Error (99.9%)","Unit","Param: numVertices"
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal","thrpt",1,5,22695.260205,8609.405239,"ops/s",100
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal","thrpt",1,5,16263.784400,2160.760356,"ops/s",500
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal","thrpt",1,5,3930.352534,17.057014,"ops/s",5000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal","thrpt",1,5,2170.868464,3.474877,"ops/s",10000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelKruskal","thrpt",1,5,1180.316822,2.827289,"ops/s",20000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims","thrpt",1,5,5531866.413197,131321.370407,"ops/s",100
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims","thrpt",1,5,2559947.286113,132927.810703,"ops/s",500
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims","thrpt",1,5,312624.848470,59743.201732,"ops/s",5000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims","thrpt",1,5,163309.521005,594.574004,"ops/s",10000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkParallelPrims","thrpt",1,5,81949.450060,218.744011,"ops/s",20000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkSequential","thrpt",1,5,418063.793384,206.048642,"ops/s",100
+"org.benchmark.parallel.PrimsBenchmark.benchmarkSequential","thrpt",1,5,62221.083721,738.165632,"ops/s",500
+"org.benchmark.parallel.PrimsBenchmark.benchmarkSequential","thrpt",1,5,2602.871454,59.673850,"ops/s",5000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkSequential","thrpt",1,5,1165.719464,5.503869,"ops/s",10000
+"org.benchmark.parallel.PrimsBenchmark.benchmarkSequential","thrpt",1,5,548.264949,0.843406,"ops/s",20000
